@@ -40,3 +40,30 @@ https://www.kaggle.com/datasets/devicharith/language-translation-englishfrench
 | Loss Function | Cross-Entropy Loss |
 | Optimizer | Adam |
 
+## Models
+### 1. Vanilla Seq2Seq
+A baseline model using GRU based Encoder decoder architecture
+
+### 2. Seq2Seq with Bahdanau Attention
+Extending Seq2Seq model with attention to inputs in input to decoder using weights
+Help decoder at each timestep to focus on important parts on different places
+
+### 3.  Transformer
+Replacing PNN with attention based sequence modeling
+
+**Encoder**
+- Token embedding with positional embeddings
+- Multi head attention
+
+**Decoder**
+- Maked attention and cross attention fromm encoder layes
+
+
+## Experimental Results
+### Validation Loss Comparison
+
+| Model | Best Validation Loss | Epoch |
+|-------|---------------------:|------:|
+| Vanilla Seq2Seq | 4.559 | 5 |
+| Seq2Seq + Bahdanau Attention | 3.730 | 4 |
+| Transformer | **2.679** | 5 |
