@@ -26,6 +26,17 @@ https://www.kaggle.com/datasets/devicharith/language-translation-englishfrench
 - Making Embedding of tokens
 - Padding embeddings to match the size
 
-  
+## Experimental Setup
 
+| Parameter | Value |
+|-----------|-------|
+| Language Pair | English → French |
+| Framework | PyTorch |
+| Dataset Subset | 20,000 sentence pairs |
+| Training Split | 80% |
+| Validation Split | 20% |
+| Batch Size | 32 |
+| Training Epochs | 5 |
+| Loss Function | Cross-Entropy Loss |
+| Optimizer | Adam |
 
